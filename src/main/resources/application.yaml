@@ -1,13 +1,13 @@
 cloud:
   aws:
     credentials:
-      access-key: <HERE_GOES_YOUR_ACCESS_KEY>
-      secret-key: <HERE_GOES_YOUR_SECRET_KEY>
+      access-key: ${AWS_ACCESS_KEY_ID}
+      secret-key: ${AWS_SECRET_ACCESS_KEY}
     region:
       auto: false
-      static: sa-east-1
+      static: ${AWS_REGION}
     sqs:
-      url: <HERE_GOES_THE_QUEUE_URL>
+      url: ${AWS_SQS_URL}
     stack:
       auto: false
 
